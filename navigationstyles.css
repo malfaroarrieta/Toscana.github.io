@@ -1,0 +1,273 @@
+body{
+    font-family: Calibri;
+    margin: 0px;
+    padding: 0%;
+    background-color: #819bcf;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(6, 98, 80);
+    border: 1px #000 solid;
+    font-size: 1.3em;
+}
+
+header > h1{ /* greater than sign means it will only apply to the h1 under header tag*/
+    margin: auto;
+    color: #FFF;
+}
+
+nav{
+    width: 100%;
+    background-color: #2aadbc;
+    border: 2px #000 solid;
+    font-weight: bold;
+    color: #FFF;
+    margin: 0px auto;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+
+nav ul li{
+    padding: 10px;
+    border:1px #606 solid;
+}
+
+nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+nav ul li:hover, nav ul li a:focus{
+    background-attachment: rgb(79, 13, 69);
+}
+
+@media (min-width: 640px){
+    header{
+        font-size: 2.1em;
+    }
+    header > h1{
+        transition: 5s;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    nav ul li{
+        border:none
+    }
+
+    nav ul li:hover, nav ul li a:focus{
+        text-shadow: 2px 2px 1px rgb(79, 13, 69);
+    }
+
+    #pizza{
+        position: absolute;
+        top: -70px;
+        right: 0px;
+        pointer-events: none;
+    }
+
+    #pasta{
+        position: relative;
+        top: 20px;
+        display: flex;
+        margin: auto;
+        pointer-events: none;
+    }
+    
+}
+
+#content{
+    width: 60%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: #FFF;
+    border: 3px #663366 solid;
+    border-radius: 15px;
+}
+
+#content h3{
+    font-size: 1.3em;
+    color: #606;
+    text-shadow: 1px 1px 2px #FFF;
+}
+
+#content p{
+    position:relative;
+}
+
+#content p img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+}
+
+
+#promotion{
+    font-size: x-large;
+    margin: auto;
+    text-align: center;
+    color: crimson;
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+	text-align: center;
+}
+
+footer ul li{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1px 3px;
+    font-size: 0.8em;
+}
+
+#menudesc{
+    text-align: center;
+}
+
+#ourmenu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+
+#appetizers, #entrees, #desserts{
+    color: rgb(156, 96, 22);
+}
+
+figcaption{
+	font-size: 0.7em;
+    color: #000;
+}
+
+h4{
+    color: #000;
+    font-size: smaller;
+}
+
+figure img{
+	width: 125px;
+	height: 100px
+}
+
+fieldset
+{
+	margin-bottom: 30px;
+	padding: 5px;
+	border: none;
+}
+
+fieldset:last-child
+{
+	margin-bottom: 0px;
+}
+
+hr
+{
+	margin-bottom: 15px;
+}
+
+legend
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 14pt;
+}
+
+
+
+ul{
+	list-style: none;
+	margin: 0;
+}
+
+label
+{
+	font-size: 12pt;
+}
+
+input:not(input[type="radio"]){
+	width: 200px;
+}
+
+.customer
+{
+	width: 130px;
+	display: inline-block;
+	text-align: right;
+}
+
+.customer_error
+{
+	margin-left: 130px;
+}
+
+input[type=text], button[type=submit], button[type=reset]
+{
+	padding: 5px 5px;
+}
+
+textarea{
+	width: 90%;
+}
+
+.formfield
+{
+	
+	margin: 10px 0px;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.error
+{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	padding: 10px 0;
+	display: none;
+}
+
+input:focus{
+    background-color: darkgreen;
+    color: white;
+}

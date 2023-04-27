@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="navigationstyles.css" />
+        <script src="formvalidation.js"></script>
+		<title>Customer Survey</title>
+	</head>
+<body>
+	<header>
+		<h1>La Toscana Restaurant</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "menu.html">Menu</a></li>
+			<li><a href = "contactus.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div id="content">
+        <form method="post" 
+				  id="survey_form" 
+				  action="http://symlink.dk/code/php/submit/">
+				<fieldset>
+					<legend>Personal Information</legend>
+					<hr />
+					<div class="formfield">
+						<label for="fname" class="customer">Full Name:</label>
+						<input type="text" id="fname" name="fname"  maxlength="45" value="" autofocus="autofocus" />					
+						<div class="customer_error error" id="fname_error">* Please enter your name.</div>
+					</div>
+					<div class="formfield">
+						<label for="phonenum" class="customer">Phone Number:</label>
+						<input type="text" id="phonenum" name="phonenum" maxlength="10" />
+						<div class="customer_error error" id="phonenum_error">* Please enter a valid phone number.</div>
+					</div>
+					<div class="formfield">
+						<label for="email" class="customer">Email:</label>
+						<input type="text" id = "email" name="email" maxlength="50" />
+						<div class="customer_error error" id="email_error">* Please enter a valid email address.</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Comments Section</legend>
+					<hr />
+					<label for="feedback">Please leave your comments and/or suggestions below</label><br />
+					<textarea id="feedback" name="feedback" rows="8" cols="50"></textarea>
+				</fieldset>
+				<fieldset>
+					<hr />
+					<button type="reset" >Clear Survey</button>
+					<button type="submit" >Process Survey</button>
+				</fieldset>
+			</form>
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>	
+        </footer>
+    </div>
+</body>
+</html>
